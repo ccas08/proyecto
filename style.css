@@ -1,0 +1,133 @@
+/* Establece el fondo de la cabecera con imagen y degradado */
+.header {
+    background: transparent url('iguana1.jpg') 0% 0% no-repeat padding-box; /* Imagen de fondo */
+    background-size: 100%; /* Muestra la imagen en su tamaño original */
+    background-position: center; /* Centra la imagen horizontalmente */
+    height: 1000px; /* Altura del contenedor (ajusta según tus necesidades) */
+    text-align: center; /* Centra el texto horizontalmente en el contenedor */
+    position: relative; /* Agregamos posicionamiento relativo al contenedor */
+    opacity: 1;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Agrega un degradado negro semi-transparente encima de la imagen */
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.352); /* Color negro semitransparente (ajusta el valor alfa según la opacidad deseada) */
+  }
+  
+  /* Importa la fuente de Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+  
+  /* Estilo del título */
+  .header h1 {
+    color: #fff; /* Color del texto */
+    font-size: 75px; /* Tamaño de fuente del título */
+    position: absolute; /* Posicionamiento absoluto para el título */
+    top: -5px; /* Ajusta la distancia desde la parte superior del contenedor */
+    left: 50%; /* Mueve el título hacia el centro horizontalmente */
+    
+    transform: translateX(-50%); /* Centra el título horizontalmente */
+    font-family: 'Raleway', sans-serif; /* Fuente personalizada de Google Fonts */
+  }
+
+
+  body {
+    background-color: black; /* Fondo negro para toda la página */
+    color: white; /* Texto blanco */
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    background: black; /* Fondo negro en lugar de una imagen */
+    justify-content: space-between; /* Alinea los elementos secundarios a ambos lados del contenedor */
+    align-items: center; /* Centra verticalmente los elementos secundarios */
+    opacity: 1;
+    width: 100%;
+  }
+  
+  .content {
+    flex: 2; /* Ocupa dos tercios del espacio disponible */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+  }
+  
+  
+  p {
+    margin: 0;
+    text-align: center;
+    width: 550px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    position:inherit;
+    left: 60%;
+  }
+  .pFirst{
+    margin-left: 50px;
+  }
+  
+  .features {
+    text-align: center;
+    background-color: black; /* Cambia el color de fondo a negro */
+    padding: 20px;
+  }
+  
+  .features h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .logos {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: black; /* Cambia el color de fondo a negro */
+    padding: 20px; /* Agrega un espaciado para que el fondo negro sea visible */
+  }
+  
+  
+  .logos li {
+    margin: 0 50px;
+    text-align: center;
+  }
+  
+  
+  .logos figcaption {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente las imágenes */
+    background-color: black;
+    padding: 20px;
+  }
+  
+  .images img {
+    max-width: 30%; /* Asegura que todas las imágenes no excedan el ancho del contenedor */
+    margin: 0 10px; /* Añade espacio horizontal entre las imágenes */
+  }
+
+  .footer{
+    text-align: center;
+  }
+  
+  
+  
+  
+  
